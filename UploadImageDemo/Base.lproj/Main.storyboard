@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView tag="1" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bcI-h2-obi">
+                                <rect key="frame" x="22" y="97" width="240" height="128"/>
+                                <color key="backgroundColor" red="0.87450980389999999" green="0.74082222419999999" blue="0.28074823180000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <gestureRecognizers/>
+                            </imageView>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pcv-GC-zG7">
+                                <rect key="frame" x="22" y="97" width="240" height="128"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="pickImage:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="vp6-bo-cRk"/>
+                                </connections>
+                            </button>
+                            <imageView tag="2" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vnD-Fb-cTK">
+                                <rect key="frame" x="22" y="243" width="240" height="128"/>
+                                <color key="backgroundColor" red="0.96078431369999995" green="0.3855336285" blue="0.39814479660000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <gestureRecognizers/>
+                            </imageView>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lHJ-NQ-XDJ">
+                                <rect key="frame" x="22" y="243" width="240" height="128"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="pickImage:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="gx9-SM-X6y"/>
+                                </connections>
+                            </button>
+                            <imageView tag="3" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="s1V-ag-KFP">
+                                <rect key="frame" x="22" y="397" width="240" height="128"/>
+                                <color key="backgroundColor" red="0.56078431370000004" green="0.68235294120000001" blue="0.75294117650000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <gestureRecognizers/>
+                            </imageView>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t94-Gg-kAo">
+                                <rect key="frame" x="22" y="397" width="240" height="128"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="pickImage:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="eB3-Gz-B3S"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iMd-kR-Cjy">
+                                <rect key="frame" x="216" y="36" width="60" height="30"/>
+                                <state key="normal" title="多张上传">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="uploadMutiImage:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="oeE-x7-5Tm"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yvz-Mp-SDI">
+                                <rect key="frame" x="22" y="43" width="60" height="30"/>
+                                <state key="normal" title="单张上传">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="uploadImage:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="arC-pf-9Dg"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="imageView1" destination="bcI-h2-obi" id="QWx-rG-MwS"/>
+                        <outlet property="imageView2" destination="vnD-Fb-cTK" id="m1a-KX-4cc"/>
+                        <outlet property="imageView3" destination="s1V-ag-KFP" id="7Z2-2Q-1uC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
